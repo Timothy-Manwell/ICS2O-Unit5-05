@@ -47,13 +47,14 @@ function myButtonClicked() {
   console.log(angleC)
   console.log(sumOfAngles)
 
-  if (sumOfAngles == 180) {
-    if (lengthA == lengthC || lengthC == lengthB || lengthA == lengthB) {
+  if (sumOfAngles == 180)
+   {
+    if (lengthA == lengthC && lengthA == lengthB && lengthB == lengthC){
       document.getElementById("answer").innerHTML =
-        "Your triangle is an isosceles triangle."
-    } else if (lengthA == lengthC && lengthA == lengthB && lengthB == lengthC) {
+      "Your triangle is an equilateral triangle."
+    } else if (lengthA == lengthC || lengthC == lengthB || lengthA == lengthB) {
       document.getElementById("answer").innerHTML =
-        "Your triangle is an equilateral triangle."
+      "Your triangle is an isosceles triangle."
     } else if (lengthA != lengthC && lengthA != lengthB && lengthB != lengthC) {
       document.getElementById("answer").innerHTML =
         "Your triangle is a scalene triangle."
