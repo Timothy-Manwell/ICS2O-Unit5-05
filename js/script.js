@@ -59,6 +59,6 @@ function myButtonClicked() {
         "Your triangle is a scalene triangle."
     }
   } else {
-    document.getElementById("answer").innerHTML = "Error."
+    document.getElementById("answer").innerHTML = "Error. Not a Triangle."
   }
 }
